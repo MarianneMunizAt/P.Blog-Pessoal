@@ -13,6 +13,8 @@ public class UsuarioLogin {
 	private String foto;
 	private String token;
 	
+	private String tipo;
+	
 	//ALERTA : o Atributo token, pois o mesmo será passado no cabeçalho de todas as requisições que do front-end.
 	//Este Atributo é fundamental para o funcionamento do consumo da api.
 	
@@ -53,5 +55,16 @@ public class UsuarioLogin {
 	}
 	public void setToken(String token) {
 		this.token = token;
+		
+		
+		
 	}
+	public String getTipo() {
+		return tipo;
+	}
+	public void setTipo(String tipo) {
+		this.tipo = tipo;
+	}
+	
+	
 }

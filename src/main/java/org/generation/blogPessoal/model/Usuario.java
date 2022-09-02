@@ -46,6 +46,8 @@ public class Usuario {
 	@Size(max = 5000, message = "O link da foto tem que ter no maximo 5000 caracteres")
 	private String foto;
 	
+	private String tipo;
+	
 // RELACIONAMENTO COM POSTAGEM
 	
 	@OneToMany(mappedBy = "usuario", cascade = CascadeType.REMOVE)  
@@ -113,6 +115,21 @@ public class Usuario {
 	public void setFoto(String foto) {
 		this.foto = foto;
 	}
+	
+	
+	
+	
+	public String getTipo() {
+		return tipo;
+	}
+
+
+	public void setTipo(String tipo) {
+		this.tipo = tipo;
+	}
+
+	
+	
 
 	public List<Postagem> getPostagem() {
 		return postagem;
